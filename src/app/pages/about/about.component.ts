@@ -10,7 +10,7 @@ import { InfoPaginaService } from '../../services/info-pagina.service';
 export class AboutComponent implements OnInit {
 
   equipo: InfoEquipo[] = [];
-  constructor(private infoPaginaService: InfoPaginaService) { }
+  constructor(public infoPaginaService: InfoPaginaService) { }
 
   ngOnInit() {
     

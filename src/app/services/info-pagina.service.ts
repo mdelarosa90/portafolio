@@ -18,7 +18,7 @@ export class InfoPaginaService {
    }
 
    private cargarInfo() {
-    this.http.get('/assets/data/data-pages.json')
+    this.http.get('./assets/data/data-pages.json')
     .subscribe((resp: InfoPagina) => {
 
       this.cargada = true;
